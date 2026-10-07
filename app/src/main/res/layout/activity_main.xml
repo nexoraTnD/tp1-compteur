@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Titre de l'application -->
+    <TextView
+        android:id="@+id/textViewTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titre_compteur"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Valeur courante du compteur -->
+    <TextView
+        android:id="@+id/textViewCompteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valeur_initiale"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:textColor="@color/compteur_nul"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Boutons + et - -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonDecrementer"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bouton_decrementer"
+            android:textSize="22sp"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/buttonIncrementer"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bouton_incrementer"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <!-- Boutons -5 et +5 (amelioration facultative) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/buttonMoinsCinq"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bouton_moins_cinq"
+            android:textSize="18sp"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/buttonPlusCinq"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bouton_plus_cinq"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Bouton de reinitialisation -->
+    <Button
+        android:id="@+id/buttonReinitialiser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bouton_reinitialiser"
+        android:textSize="18sp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp" />
+
+</LinearLayout>
